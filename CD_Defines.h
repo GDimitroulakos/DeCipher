@@ -12,10 +12,12 @@
 #include <iostream>
 #include <stdlib.h>
 #include <ostream>
+#include "location.hh"
+#define BISON_DLLOCATION_HH
 using namespace std;
 
 #ifdef BISON_DLLOCATION_HH
-#define DLINTERFACE_CONSTRUCTOR location_(scdecl::location *loc){ \
+#define DLINTERFACE_CONSTRUCTOR location_(decipher::location *loc){ \
 	start_line = loc->begin.line;\
 	start_column = loc->begin.column;\
 	end_line = loc->end.line;\

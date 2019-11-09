@@ -60,10 +60,10 @@
     <ClCompile Include="SCDecl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Decipher.flex.cpp">
+    <ClCompile Include="lex.scdecl.c">
       <Filter>Grammar</Filter>
     </ClCompile>
-    <ClCompile Include="Decipher.tab.cpp">
+    <ClCompile Include="scdecl.tab.c">
       <Filter>Grammar</Filter>
     </ClCompile>
   </ItemGroup>
@@ -95,16 +95,7 @@
     <ClInclude Include="CD_HLIRTypeDefines.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Decipher.tab.h">
-      <Filter>Grammar</Filter>
-    </ClInclude>
-    <ClInclude Include="location.hh">
-      <Filter>Grammar</Filter>
-    </ClInclude>
-    <ClInclude Include="position.hh">
-      <Filter>Grammar</Filter>
-    </ClInclude>
-    <ClInclude Include="stack.hh">
+    <ClInclude Include="scdecl.tab.h">
       <Filter>Grammar</Filter>
     </ClInclude>
   </ItemGroup>
@@ -125,12 +116,12 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <Flex Include="Decipher.l">
+    <Flex Include="scdecl.l">
       <Filter>Grammar</Filter>
     </Flex>
   </ItemGroup>
   <ItemGroup>
-    <Bison Include="Decipher.y">
+    <Bison Include="scdecl.y">
       <Filter>Grammar</Filter>
     </Bison>
   </ItemGroup>

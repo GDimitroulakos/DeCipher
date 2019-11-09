@@ -34,24 +34,24 @@
 /* First part of user declarations.  */
 
 /* Line 279 of lalr1.cc  */
-#line 38 "scdecl.tab.cpp"
+#line 38 "Decipher.tab.cpp"
 
 
-#include "scdecl.tab.h"
+#include "Decipher.tab.h"
 
 /* User implementation prologue.  */
 
 /* Line 285 of lalr1.cc  */
-#line 46 "scdecl.tab.cpp"
+#line 46 "Decipher.tab.cpp"
 /* Unqualified %code blocks.  */
 /* Line 286 of lalr1.cc  */
-#line 52 "scdecl.y"
+#line 52 "Decipher.y"
 
 	#include "CD_driver.h"
 
 
 /* Line 286 of lalr1.cc  */
-#line 55 "scdecl.tab.cpp"
+#line 55 "Decipher.tab.cpp"
 
 
 # ifndef YY_NULL
@@ -144,10 +144,10 @@ do {					\
 #define YYRECOVERING()  (!!yyerrstatus_)
 
 /* Line 353 of lalr1.cc  */
-#line 12 "scdecl.y"
-namespace scdecl {
+#line 12 "Decipher.y"
+namespace decipher {
 /* Line 353 of lalr1.cc  */
-#line 151 "scdecl.tab.cpp"
+#line 151 "Decipher.tab.cpp"
 
   /* Return YYSTR after stripping away unnecessary quotes and
      backslashes, so that it's suitable for yyerror.  The heuristic is
@@ -155,7 +155,7 @@ namespace scdecl {
      apostrophe, a comma, or backslash (other than backslash-backslash).
      YYSTR is taken from yytname.  */
   std::string
-  SCDeclParserClass::yytnamerr_ (const char *yystr)
+  DecipherParserClass::yytnamerr_ (const char *yystr)
   {
     if (*yystr == '"')
       {
@@ -188,7 +188,7 @@ namespace scdecl {
 
 
   /// Build a parser object.
-  SCDeclParserClass::SCDeclParserClass (SCDeclParser_driver& driver_yyarg)
+  DecipherParserClass::DecipherParserClass (DecipherParser_driver& driver_yyarg)
     :
 #if YYDEBUG
       yydebug_ (false),
@@ -198,7 +198,7 @@ namespace scdecl {
   {
   }
 
-  SCDeclParserClass::~SCDeclParserClass ()
+  DecipherParserClass::~DecipherParserClass ()
   {
   }
 
@@ -208,7 +208,7 @@ namespace scdecl {
   `--------------------------------*/
 
   inline void
-  SCDeclParserClass::yy_symbol_value_print_ (int yytype,
+  DecipherParserClass::yy_symbol_value_print_ (int yytype,
 			   const semantic_type* yyvaluep, const location_type* yylocationp)
   {
     YYUSE (yylocationp);
@@ -225,7 +225,7 @@ namespace scdecl {
 
 
   void
-  SCDeclParserClass::yy_symbol_print_ (int yytype,
+  DecipherParserClass::yy_symbol_print_ (int yytype,
 			   const semantic_type* yyvaluep, const location_type* yylocationp)
   {
     *yycdebug_ << (yytype < yyntokens_ ? "token" : "nterm")
@@ -237,7 +237,7 @@ namespace scdecl {
 #endif
 
   void
-  SCDeclParserClass::yydestruct_ (const char* yymsg,
+  DecipherParserClass::yydestruct_ (const char* yymsg,
 			   int yytype, semantic_type* yyvaluep, location_type* yylocationp)
   {
     YYUSE (yylocationp);
@@ -256,7 +256,7 @@ namespace scdecl {
   }
 
   void
-  SCDeclParserClass::yypop_ (unsigned int n)
+  DecipherParserClass::yypop_ (unsigned int n)
   {
     yystate_stack_.pop (n);
     yysemantic_stack_.pop (n);
@@ -265,45 +265,45 @@ namespace scdecl {
 
 #if YYDEBUG
   std::ostream&
-  SCDeclParserClass::debug_stream () const
+  DecipherParserClass::debug_stream () const
   {
     return *yycdebug_;
   }
 
   void
-  SCDeclParserClass::set_debug_stream (std::ostream& o)
+  DecipherParserClass::set_debug_stream (std::ostream& o)
   {
     yycdebug_ = &o;
   }
 
 
-  SCDeclParserClass::debug_level_type
-  SCDeclParserClass::debug_level () const
+  DecipherParserClass::debug_level_type
+  DecipherParserClass::debug_level () const
   {
     return yydebug_;
   }
 
   void
-  SCDeclParserClass::set_debug_level (debug_level_type l)
+  DecipherParserClass::set_debug_level (debug_level_type l)
   {
     yydebug_ = l;
   }
 #endif
 
   inline bool
-  SCDeclParserClass::yy_pact_value_is_default_ (int yyvalue)
+  DecipherParserClass::yy_pact_value_is_default_ (int yyvalue)
   {
     return yyvalue == yypact_ninf_;
   }
 
   inline bool
-  SCDeclParserClass::yy_table_value_is_error_ (int yyvalue)
+  DecipherParserClass::yy_table_value_is_error_ (int yyvalue)
   {
     return yyvalue == yytable_ninf_;
   }
 
   int
-  SCDeclParserClass::parse ()
+  DecipherParserClass::parse ()
   {
     /// Lookahead and lookahead in internal form.
     int yychar = yyempty_;
@@ -342,13 +342,13 @@ namespace scdecl {
 
 /* User initialization code.  */
 /* Line 545 of lalr1.cc  */
-#line 35 "scdecl.y"
+#line 35 "Decipher.y"
 {
 	// Initialize the initial location.
 	//@$.begin.filename = @$.end.filename = &driver.file;
 }
 /* Line 545 of lalr1.cc  */
-#line 352 "scdecl.tab.cpp"
+#line 352 "Decipher.tab.cpp"
 
     /* Initialize the stacks.  The initial state will be pushed in
        yynewstate, since the latter expects the semantical and the
@@ -468,659 +468,659 @@ namespace scdecl {
       {
           case 2:
 /* Line 670 of lalr1.cc  */
-#line 72 "scdecl.y"
+#line 72 "Decipher.y"
     {driver.m_ASTRoot = NULL; }
     break;
 
   case 3:
 /* Line 670 of lalr1.cc  */
-#line 73 "scdecl.y"
-    { (yyval.ast)= new CDASTscdeclaration_unit((CDASTscdeclarations *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Scdeclaration_unit__Scdeclarations_ );driver.m_ASTRoot = (yyval.ast); }
+#line 73 "Decipher.y"
+    { (yyval.ast)= new CDASTscdeclaration_unit((CDASTscdeclarations *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Scdeclaration_unit__Scdeclarations_ );driver.m_ASTRoot = (yyval.ast); }
     break;
 
   case 4:
 /* Line 670 of lalr1.cc  */
-#line 75 "scdecl.y"
-    { (yyval.ast)= new CDASTscdeclarations((CDASTscdeclaration *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Scdeclarations__Scdeclaration_ ); }
+#line 75 "Decipher.y"
+    { (yyval.ast)= new CDASTscdeclarations((CDASTscdeclaration *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Scdeclarations__Scdeclaration_ ); }
     break;
 
   case 5:
 /* Line 670 of lalr1.cc  */
-#line 76 "scdecl.y"
-    { (yyval.ast)= new CDASTscdeclarations((CDASTTOKEN *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTtype_name *)(yysemantic_stack_[(2) - (2)].ast) ,(scdecl::location *)&yylloc ,DLAST_Scdeclarations__TYPE_EXPRESSION_Type_name_ ); }
+#line 76 "Decipher.y"
+    { (yyval.ast)= new CDASTscdeclarations((CDASTTOKEN *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTtype_name *)(yysemantic_stack_[(2) - (2)].ast) ,(decipher::location *)&yylloc ,DLAST_Scdeclarations__TYPE_EXPRESSION_Type_name_ ); }
     break;
 
   case 6:
 /* Line 670 of lalr1.cc  */
-#line 77 "scdecl.y"
-    { (yyval.ast)= new CDASTscdeclarations((CDASTscdeclaration *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTscdeclarations *)(yysemantic_stack_[(2) - (2)].ast) ,(scdecl::location *)&yylloc ,DLAST_Scdeclarations__Scdeclaration_Scdeclarations_ ); }
+#line 77 "Decipher.y"
+    { (yyval.ast)= new CDASTscdeclarations((CDASTscdeclaration *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTscdeclarations *)(yysemantic_stack_[(2) - (2)].ast) ,(decipher::location *)&yylloc ,DLAST_Scdeclarations__Scdeclaration_Scdeclarations_ ); }
     break;
 
   case 7:
 /* Line 670 of lalr1.cc  */
-#line 78 "scdecl.y"
-    { (yyval.ast)= new CDASTscdeclarations((CDASTTOKEN *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTtype_name *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTscdeclarations *)(yysemantic_stack_[(3) - (3)].ast) ,(scdecl::location *)&yylloc ,DLAST_Scdeclarations__TYPE_EXPRESSION_Type_name_Scdeclarations_ ); }
+#line 78 "Decipher.y"
+    { (yyval.ast)= new CDASTscdeclarations((CDASTTOKEN *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTtype_name *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTscdeclarations *)(yysemantic_stack_[(3) - (3)].ast) ,(decipher::location *)&yylloc ,DLAST_Scdeclarations__TYPE_EXPRESSION_Type_name_Scdeclarations_ ); }
     break;
 
   case 8:
 /* Line 670 of lalr1.cc  */
-#line 80 "scdecl.y"
-    { (yyval.ast)= new CDASTscdeclaration((CDASTdeclaration_specifiers *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(2) - (2)].ast) ,(scdecl::location *)&yylloc ,DLAST_Scdeclaration__Declaration_specifiers_SEMICOLON_ ); }
+#line 80 "Decipher.y"
+    { (yyval.ast)= new CDASTscdeclaration((CDASTdeclaration_specifiers *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(2) - (2)].ast) ,(decipher::location *)&yylloc ,DLAST_Scdeclaration__Declaration_specifiers_SEMICOLON_ ); }
     break;
 
   case 9:
 /* Line 670 of lalr1.cc  */
-#line 81 "scdecl.y"
-    { (yyval.ast)= new CDASTscdeclaration((CDASTdeclaration_specifiers *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTinit_declarator_list *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (3)].ast) ,(scdecl::location *)&yylloc ,DLAST_Scdeclaration__Declaration_specifiers_Init_declarator_list_SEMICOLON_ ); }
+#line 81 "Decipher.y"
+    { (yyval.ast)= new CDASTscdeclaration((CDASTdeclaration_specifiers *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTinit_declarator_list *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (3)].ast) ,(decipher::location *)&yylloc ,DLAST_Scdeclaration__Declaration_specifiers_Init_declarator_list_SEMICOLON_ ); }
     break;
 
   case 10:
 /* Line 670 of lalr1.cc  */
-#line 83 "scdecl.y"
-    { (yyval.ast)= new CDASTdeclaration_specifiers((CDASTstorage_class_specifier *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Declaration_specifiers__Storage_class_specifier_ ); }
+#line 83 "Decipher.y"
+    { (yyval.ast)= new CDASTdeclaration_specifiers((CDASTstorage_class_specifier *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Declaration_specifiers__Storage_class_specifier_ ); }
     break;
 
   case 11:
 /* Line 670 of lalr1.cc  */
-#line 84 "scdecl.y"
-    { (yyval.ast)= new CDASTdeclaration_specifiers((CDASTstorage_class_specifier *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTdeclaration_specifiers *)(yysemantic_stack_[(2) - (2)].ast) ,(scdecl::location *)&yylloc ,DLAST_Declaration_specifiers__Storage_class_specifier_Declaration_specifiers_ ); }
+#line 84 "Decipher.y"
+    { (yyval.ast)= new CDASTdeclaration_specifiers((CDASTstorage_class_specifier *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTdeclaration_specifiers *)(yysemantic_stack_[(2) - (2)].ast) ,(decipher::location *)&yylloc ,DLAST_Declaration_specifiers__Storage_class_specifier_Declaration_specifiers_ ); }
     break;
 
   case 12:
 /* Line 670 of lalr1.cc  */
-#line 85 "scdecl.y"
-    { (yyval.ast)= new CDASTdeclaration_specifiers((CDASTtype_specifier *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Declaration_specifiers__Type_specifier_ ); }
+#line 85 "Decipher.y"
+    { (yyval.ast)= new CDASTdeclaration_specifiers((CDASTtype_specifier *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Declaration_specifiers__Type_specifier_ ); }
     break;
 
   case 13:
 /* Line 670 of lalr1.cc  */
-#line 86 "scdecl.y"
-    { (yyval.ast)= new CDASTdeclaration_specifiers((CDASTtype_specifier *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTdeclaration_specifiers *)(yysemantic_stack_[(2) - (2)].ast) ,(scdecl::location *)&yylloc ,DLAST_Declaration_specifiers__Type_specifier_Declaration_specifiers_ ); }
+#line 86 "Decipher.y"
+    { (yyval.ast)= new CDASTdeclaration_specifiers((CDASTtype_specifier *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTdeclaration_specifiers *)(yysemantic_stack_[(2) - (2)].ast) ,(decipher::location *)&yylloc ,DLAST_Declaration_specifiers__Type_specifier_Declaration_specifiers_ ); }
     break;
 
   case 14:
 /* Line 670 of lalr1.cc  */
-#line 87 "scdecl.y"
-    { (yyval.ast)= new CDASTdeclaration_specifiers((CDASTtype_qualifier *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Declaration_specifiers__Type_qualifier_ ); }
+#line 87 "Decipher.y"
+    { (yyval.ast)= new CDASTdeclaration_specifiers((CDASTtype_qualifier *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Declaration_specifiers__Type_qualifier_ ); }
     break;
 
   case 15:
 /* Line 670 of lalr1.cc  */
-#line 88 "scdecl.y"
-    { (yyval.ast)= new CDASTdeclaration_specifiers((CDASTtype_qualifier *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTdeclaration_specifiers *)(yysemantic_stack_[(2) - (2)].ast) ,(scdecl::location *)&yylloc ,DLAST_Declaration_specifiers__Type_qualifier_Declaration_specifiers_ ); }
+#line 88 "Decipher.y"
+    { (yyval.ast)= new CDASTdeclaration_specifiers((CDASTtype_qualifier *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTdeclaration_specifiers *)(yysemantic_stack_[(2) - (2)].ast) ,(decipher::location *)&yylloc ,DLAST_Declaration_specifiers__Type_qualifier_Declaration_specifiers_ ); }
     break;
 
   case 16:
 /* Line 670 of lalr1.cc  */
-#line 90 "scdecl.y"
-    { (yyval.ast)= new CDASTinit_declarator_list((CDASTinit_declarator *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Init_declarator_list__Init_declarator_ ); }
+#line 90 "Decipher.y"
+    { (yyval.ast)= new CDASTinit_declarator_list((CDASTinit_declarator *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Init_declarator_list__Init_declarator_ ); }
     break;
 
   case 17:
 /* Line 670 of lalr1.cc  */
-#line 91 "scdecl.y"
-    { (yyval.ast)= new CDASTinit_declarator_list((CDASTinit_declarator_list *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTinit_declarator *)(yysemantic_stack_[(3) - (3)].ast) ,(scdecl::location *)&yylloc ,DLAST_Init_declarator_list__Init_declarator_list_COMMA_Init_declarator_ ); }
+#line 91 "Decipher.y"
+    { (yyval.ast)= new CDASTinit_declarator_list((CDASTinit_declarator_list *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTinit_declarator *)(yysemantic_stack_[(3) - (3)].ast) ,(decipher::location *)&yylloc ,DLAST_Init_declarator_list__Init_declarator_list_COMMA_Init_declarator_ ); }
     break;
 
   case 18:
 /* Line 670 of lalr1.cc  */
-#line 93 "scdecl.y"
-    { (yyval.ast)= new CDASTinit_declarator((CDASTdeclarator *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Init_declarator__Declarator_ ); }
+#line 93 "Decipher.y"
+    { (yyval.ast)= new CDASTinit_declarator((CDASTdeclarator *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Init_declarator__Declarator_ ); }
     break;
 
   case 19:
 /* Line 670 of lalr1.cc  */
-#line 94 "scdecl.y"
-    { (yyval.ast)= new CDASTinit_declarator((CDASTdeclarator *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTinitializer *)(yysemantic_stack_[(3) - (3)].ast) ,(scdecl::location *)&yylloc ,DLAST_Init_declarator__Declarator_EQUALSIGN_Initializer_ ); }
+#line 94 "Decipher.y"
+    { (yyval.ast)= new CDASTinit_declarator((CDASTdeclarator *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTinitializer *)(yysemantic_stack_[(3) - (3)].ast) ,(decipher::location *)&yylloc ,DLAST_Init_declarator__Declarator_EQUALSIGN_Initializer_ ); }
     break;
 
   case 20:
 /* Line 670 of lalr1.cc  */
-#line 96 "scdecl.y"
-    {g_IsTypedef = true; (yyval.ast)= new CDASTstorage_class_specifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Storage_class_specifier__TYPEDEF_ ); }
+#line 96 "Decipher.y"
+    {g_IsTypedef = true; (yyval.ast)= new CDASTstorage_class_specifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Storage_class_specifier__TYPEDEF_ ); }
     break;
 
   case 21:
 /* Line 670 of lalr1.cc  */
-#line 97 "scdecl.y"
-    { (yyval.ast)= new CDASTstorage_class_specifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Storage_class_specifier__EXTERN_ ); }
+#line 97 "Decipher.y"
+    { (yyval.ast)= new CDASTstorage_class_specifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Storage_class_specifier__EXTERN_ ); }
     break;
 
   case 22:
 /* Line 670 of lalr1.cc  */
-#line 98 "scdecl.y"
-    { (yyval.ast)= new CDASTstorage_class_specifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Storage_class_specifier__STATIC_ ); }
+#line 98 "Decipher.y"
+    { (yyval.ast)= new CDASTstorage_class_specifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Storage_class_specifier__STATIC_ ); }
     break;
 
   case 23:
 /* Line 670 of lalr1.cc  */
-#line 99 "scdecl.y"
-    { (yyval.ast)= new CDASTstorage_class_specifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Storage_class_specifier__AUTO_ ); }
+#line 99 "Decipher.y"
+    { (yyval.ast)= new CDASTstorage_class_specifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Storage_class_specifier__AUTO_ ); }
     break;
 
   case 24:
 /* Line 670 of lalr1.cc  */
-#line 100 "scdecl.y"
-    { (yyval.ast)= new CDASTstorage_class_specifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Storage_class_specifier__REGISTER_ ); }
+#line 100 "Decipher.y"
+    { (yyval.ast)= new CDASTstorage_class_specifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Storage_class_specifier__REGISTER_ ); }
     break;
 
   case 25:
 /* Line 670 of lalr1.cc  */
-#line 102 "scdecl.y"
-    { (yyval.ast)= new CDASTtype_specifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Type_specifier__VOID_ ); }
+#line 102 "Decipher.y"
+    { (yyval.ast)= new CDASTtype_specifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Type_specifier__VOID_ ); }
     break;
 
   case 26:
 /* Line 670 of lalr1.cc  */
-#line 103 "scdecl.y"
-    { (yyval.ast)= new CDASTtype_specifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Type_specifier__CHAR_ ); }
+#line 103 "Decipher.y"
+    { (yyval.ast)= new CDASTtype_specifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Type_specifier__CHAR_ ); }
     break;
 
   case 27:
 /* Line 670 of lalr1.cc  */
-#line 104 "scdecl.y"
-    { (yyval.ast)= new CDASTtype_specifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Type_specifier__SHORT_ ); }
+#line 104 "Decipher.y"
+    { (yyval.ast)= new CDASTtype_specifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Type_specifier__SHORT_ ); }
     break;
 
   case 28:
 /* Line 670 of lalr1.cc  */
-#line 105 "scdecl.y"
-    { (yyval.ast)= new CDASTtype_specifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Type_specifier__INT_ ); }
+#line 105 "Decipher.y"
+    { (yyval.ast)= new CDASTtype_specifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Type_specifier__INT_ ); }
     break;
 
   case 29:
 /* Line 670 of lalr1.cc  */
-#line 106 "scdecl.y"
-    { (yyval.ast)= new CDASTtype_specifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Type_specifier__LONG_ ); }
+#line 106 "Decipher.y"
+    { (yyval.ast)= new CDASTtype_specifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Type_specifier__LONG_ ); }
     break;
 
   case 30:
 /* Line 670 of lalr1.cc  */
-#line 107 "scdecl.y"
-    { (yyval.ast)= new CDASTtype_specifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Type_specifier__FLOAT_ ); }
+#line 107 "Decipher.y"
+    { (yyval.ast)= new CDASTtype_specifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Type_specifier__FLOAT_ ); }
     break;
 
   case 31:
 /* Line 670 of lalr1.cc  */
-#line 108 "scdecl.y"
-    { (yyval.ast)= new CDASTtype_specifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Type_specifier__DOUBLE_ ); }
+#line 108 "Decipher.y"
+    { (yyval.ast)= new CDASTtype_specifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Type_specifier__DOUBLE_ ); }
     break;
 
   case 32:
 /* Line 670 of lalr1.cc  */
-#line 109 "scdecl.y"
-    { (yyval.ast)= new CDASTtype_specifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Type_specifier__SIGNED_ ); }
+#line 109 "Decipher.y"
+    { (yyval.ast)= new CDASTtype_specifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Type_specifier__SIGNED_ ); }
     break;
 
   case 33:
 /* Line 670 of lalr1.cc  */
-#line 110 "scdecl.y"
-    { (yyval.ast)= new CDASTtype_specifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Type_specifier__UNSIGNED_ ); }
+#line 110 "Decipher.y"
+    { (yyval.ast)= new CDASTtype_specifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Type_specifier__UNSIGNED_ ); }
     break;
 
   case 34:
 /* Line 670 of lalr1.cc  */
-#line 111 "scdecl.y"
-    { (yyval.ast)= new CDASTtype_specifier((CDASTstruct_or_union_specifier *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Type_specifier__Struct_or_union_specifier_ ); }
+#line 111 "Decipher.y"
+    { (yyval.ast)= new CDASTtype_specifier((CDASTstruct_or_union_specifier *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Type_specifier__Struct_or_union_specifier_ ); }
     break;
 
   case 35:
 /* Line 670 of lalr1.cc  */
-#line 112 "scdecl.y"
-    { (yyval.ast)= new CDASTtype_specifier((CDASTenum_specifier *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Type_specifier__Enum_specifier_ ); }
+#line 112 "Decipher.y"
+    { (yyval.ast)= new CDASTtype_specifier((CDASTenum_specifier *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Type_specifier__Enum_specifier_ ); }
     break;
 
   case 36:
 /* Line 670 of lalr1.cc  */
-#line 113 "scdecl.y"
-    { (yyval.ast)= new CDASTtype_specifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Type_specifier__TYPE_NAME_ ); }
+#line 113 "Decipher.y"
+    { (yyval.ast)= new CDASTtype_specifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Type_specifier__TYPE_NAME_ ); }
     break;
 
   case 37:
 /* Line 670 of lalr1.cc  */
-#line 115 "scdecl.y"
-    { g_IsInStructUnionDeclaration = false;(yyval.ast)= new CDASTstruct_or_union_specifier((CDASTstruct_or_union *)(yysemantic_stack_[(5) - (1)].ast) ,(CDASTqualified_id *)(yysemantic_stack_[(5) - (2)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(5) - (3)].ast),(CDASTstruct_declaration_list *)(yysemantic_stack_[(5) - (4)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(5) - (5)].ast) ,(scdecl::location *)&yylloc ,DLAST_Struct_or_union_specifier__Struct_or_union_Qualified_id_LBRACE_Struct_declaration_list_RBRACE_ ); }
+#line 115 "Decipher.y"
+    { g_IsInStructUnionDeclaration = false;(yyval.ast)= new CDASTstruct_or_union_specifier((CDASTstruct_or_union *)(yysemantic_stack_[(5) - (1)].ast) ,(CDASTqualified_id *)(yysemantic_stack_[(5) - (2)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(5) - (3)].ast),(CDASTstruct_declaration_list *)(yysemantic_stack_[(5) - (4)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(5) - (5)].ast) ,(decipher::location *)&yylloc ,DLAST_Struct_or_union_specifier__Struct_or_union_Qualified_id_LBRACE_Struct_declaration_list_RBRACE_ ); }
     break;
 
   case 38:
 /* Line 670 of lalr1.cc  */
-#line 116 "scdecl.y"
-    { g_IsInStructUnionDeclaration = false; (yyval.ast)= new CDASTstruct_or_union_specifier((CDASTstruct_or_union *)(yysemantic_stack_[(4) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(4) - (2)].ast) ,(CDASTstruct_declaration_list *)(yysemantic_stack_[(4) - (3)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(4) - (4)].ast) ,(scdecl::location *)&yylloc ,DLAST_Struct_or_union_specifier__Struct_or_union_LBRACE_Struct_declaration_list_RBRACE_ ); }
+#line 116 "Decipher.y"
+    { g_IsInStructUnionDeclaration = false; (yyval.ast)= new CDASTstruct_or_union_specifier((CDASTstruct_or_union *)(yysemantic_stack_[(4) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(4) - (2)].ast) ,(CDASTstruct_declaration_list *)(yysemantic_stack_[(4) - (3)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(4) - (4)].ast) ,(decipher::location *)&yylloc ,DLAST_Struct_or_union_specifier__Struct_or_union_LBRACE_Struct_declaration_list_RBRACE_ ); }
     break;
 
   case 39:
 /* Line 670 of lalr1.cc  */
-#line 117 "scdecl.y"
-    { (yyval.ast)= new CDASTstruct_or_union_specifier((CDASTstruct_or_union *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTqualified_id *)(yysemantic_stack_[(2) - (2)].ast) ,(scdecl::location *)&yylloc ,DLAST_Struct_or_union_specifier__Struct_or_union_Qualified_id_ ); }
+#line 117 "Decipher.y"
+    { (yyval.ast)= new CDASTstruct_or_union_specifier((CDASTstruct_or_union *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTqualified_id *)(yysemantic_stack_[(2) - (2)].ast) ,(decipher::location *)&yylloc ,DLAST_Struct_or_union_specifier__Struct_or_union_Qualified_id_ ); }
     break;
 
   case 40:
 /* Line 670 of lalr1.cc  */
-#line 119 "scdecl.y"
-    {g_IsInStructUnionDeclaration = true; (yyval.ast)= new CDASTstruct_or_union((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Struct_or_union__STRUCT_ ); }
+#line 119 "Decipher.y"
+    {g_IsInStructUnionDeclaration = true; (yyval.ast)= new CDASTstruct_or_union((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Struct_or_union__STRUCT_ ); }
     break;
 
   case 41:
 /* Line 670 of lalr1.cc  */
-#line 120 "scdecl.y"
-    { g_IsInStructUnionDeclaration = true; (yyval.ast)= new CDASTstruct_or_union((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Struct_or_union__UNION_ ); }
+#line 120 "Decipher.y"
+    { g_IsInStructUnionDeclaration = true; (yyval.ast)= new CDASTstruct_or_union((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Struct_or_union__UNION_ ); }
     break;
 
   case 42:
 /* Line 670 of lalr1.cc  */
-#line 122 "scdecl.y"
-    { (yyval.ast)= new CDASTstruct_declaration_list((CDASTstruct_declaration *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Struct_declaration_list__Struct_declaration_ ); }
+#line 122 "Decipher.y"
+    { (yyval.ast)= new CDASTstruct_declaration_list((CDASTstruct_declaration *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Struct_declaration_list__Struct_declaration_ ); }
     break;
 
   case 43:
 /* Line 670 of lalr1.cc  */
-#line 123 "scdecl.y"
-    { (yyval.ast)= new CDASTstruct_declaration_list((CDASTstruct_declaration_list *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTstruct_declaration *)(yysemantic_stack_[(2) - (2)].ast) ,(scdecl::location *)&yylloc ,DLAST_Struct_declaration_list__Struct_declaration_list_Struct_declaration_ ); }
+#line 123 "Decipher.y"
+    { (yyval.ast)= new CDASTstruct_declaration_list((CDASTstruct_declaration_list *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTstruct_declaration *)(yysemantic_stack_[(2) - (2)].ast) ,(decipher::location *)&yylloc ,DLAST_Struct_declaration_list__Struct_declaration_list_Struct_declaration_ ); }
     break;
 
   case 44:
 /* Line 670 of lalr1.cc  */
-#line 125 "scdecl.y"
-    { (yyval.ast)= new CDASTstruct_declaration((CDASTspecifier_qualifier_list *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTstruct_declarator_list *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (3)].ast) ,(scdecl::location *)&yylloc ,DLAST_Struct_declaration__Specifier_qualifier_list_Struct_declarator_list_SEMICOLON_ ); }
+#line 125 "Decipher.y"
+    { (yyval.ast)= new CDASTstruct_declaration((CDASTspecifier_qualifier_list *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTstruct_declarator_list *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (3)].ast) ,(decipher::location *)&yylloc ,DLAST_Struct_declaration__Specifier_qualifier_list_Struct_declarator_list_SEMICOLON_ ); }
     break;
 
   case 45:
 /* Line 670 of lalr1.cc  */
-#line 127 "scdecl.y"
-    { (yyval.ast)= new CDASTspecifier_qualifier_list((CDASTtype_specifier *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTspecifier_qualifier_list *)(yysemantic_stack_[(2) - (2)].ast) ,(scdecl::location *)&yylloc ,DLAST_Specifier_qualifier_list__Type_specifier_Specifier_qualifier_list_ ); }
+#line 127 "Decipher.y"
+    { (yyval.ast)= new CDASTspecifier_qualifier_list((CDASTtype_specifier *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTspecifier_qualifier_list *)(yysemantic_stack_[(2) - (2)].ast) ,(decipher::location *)&yylloc ,DLAST_Specifier_qualifier_list__Type_specifier_Specifier_qualifier_list_ ); }
     break;
 
   case 46:
 /* Line 670 of lalr1.cc  */
-#line 128 "scdecl.y"
-    { (yyval.ast)= new CDASTspecifier_qualifier_list((CDASTtype_specifier *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Specifier_qualifier_list__Type_specifier_ ); }
+#line 128 "Decipher.y"
+    { (yyval.ast)= new CDASTspecifier_qualifier_list((CDASTtype_specifier *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Specifier_qualifier_list__Type_specifier_ ); }
     break;
 
   case 47:
 /* Line 670 of lalr1.cc  */
-#line 129 "scdecl.y"
-    { (yyval.ast)= new CDASTspecifier_qualifier_list((CDASTtype_qualifier *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTspecifier_qualifier_list *)(yysemantic_stack_[(2) - (2)].ast) ,(scdecl::location *)&yylloc ,DLAST_Specifier_qualifier_list__Type_qualifier_Specifier_qualifier_list_ ); }
+#line 129 "Decipher.y"
+    { (yyval.ast)= new CDASTspecifier_qualifier_list((CDASTtype_qualifier *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTspecifier_qualifier_list *)(yysemantic_stack_[(2) - (2)].ast) ,(decipher::location *)&yylloc ,DLAST_Specifier_qualifier_list__Type_qualifier_Specifier_qualifier_list_ ); }
     break;
 
   case 48:
 /* Line 670 of lalr1.cc  */
-#line 130 "scdecl.y"
-    { (yyval.ast)= new CDASTspecifier_qualifier_list((CDASTtype_qualifier *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Specifier_qualifier_list__Type_qualifier_ ); }
+#line 130 "Decipher.y"
+    { (yyval.ast)= new CDASTspecifier_qualifier_list((CDASTtype_qualifier *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Specifier_qualifier_list__Type_qualifier_ ); }
     break;
 
   case 49:
 /* Line 670 of lalr1.cc  */
-#line 132 "scdecl.y"
-    { (yyval.ast)= new CDASTstruct_declarator_list((CDASTstruct_declarator *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Struct_declarator_list__Struct_declarator_ ); }
+#line 132 "Decipher.y"
+    { (yyval.ast)= new CDASTstruct_declarator_list((CDASTstruct_declarator *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Struct_declarator_list__Struct_declarator_ ); }
     break;
 
   case 50:
 /* Line 670 of lalr1.cc  */
-#line 133 "scdecl.y"
-    { (yyval.ast)= new CDASTstruct_declarator_list((CDASTstruct_declarator_list *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTstruct_declarator *)(yysemantic_stack_[(3) - (3)].ast) ,(scdecl::location *)&yylloc ,DLAST_Struct_declarator_list__Struct_declarator_list_COMMA_Struct_declarator_ ); }
+#line 133 "Decipher.y"
+    { (yyval.ast)= new CDASTstruct_declarator_list((CDASTstruct_declarator_list *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTstruct_declarator *)(yysemantic_stack_[(3) - (3)].ast) ,(decipher::location *)&yylloc ,DLAST_Struct_declarator_list__Struct_declarator_list_COMMA_Struct_declarator_ ); }
     break;
 
   case 51:
 /* Line 670 of lalr1.cc  */
-#line 135 "scdecl.y"
-    { (yyval.ast)= new CDASTstruct_declarator((CDASTdeclarator *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Struct_declarator__Declarator_ ); }
+#line 135 "Decipher.y"
+    { (yyval.ast)= new CDASTstruct_declarator((CDASTdeclarator *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Struct_declarator__Declarator_ ); }
     break;
 
   case 52:
 /* Line 670 of lalr1.cc  */
-#line 136 "scdecl.y"
-    { (yyval.ast)= new CDASTstruct_declarator((CDASTTOKEN *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTconstant_expression *)(yysemantic_stack_[(2) - (2)].ast) ,(scdecl::location *)&yylloc ,DLAST_Struct_declarator__COLON_Constant_expression_ ); }
+#line 136 "Decipher.y"
+    { (yyval.ast)= new CDASTstruct_declarator((CDASTTOKEN *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTconstant_expression *)(yysemantic_stack_[(2) - (2)].ast) ,(decipher::location *)&yylloc ,DLAST_Struct_declarator__COLON_Constant_expression_ ); }
     break;
 
   case 53:
 /* Line 670 of lalr1.cc  */
-#line 137 "scdecl.y"
-    { (yyval.ast)= new CDASTstruct_declarator((CDASTdeclarator *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTconstant_expression *)(yysemantic_stack_[(3) - (3)].ast) ,(scdecl::location *)&yylloc ,DLAST_Struct_declarator__Declarator_COLON_Constant_expression_ ); }
+#line 137 "Decipher.y"
+    { (yyval.ast)= new CDASTstruct_declarator((CDASTdeclarator *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTconstant_expression *)(yysemantic_stack_[(3) - (3)].ast) ,(decipher::location *)&yylloc ,DLAST_Struct_declarator__Declarator_COLON_Constant_expression_ ); }
     break;
 
   case 54:
 /* Line 670 of lalr1.cc  */
-#line 139 "scdecl.y"
-    { (yyval.ast)= new CDASTenum_specifier((CDASTTOKEN *)(yysemantic_stack_[(4) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(4) - (2)].ast) ,(CDASTenumerator_list *)(yysemantic_stack_[(4) - (3)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(4) - (4)].ast) ,(scdecl::location *)&yylloc ,DLAST_Enum_specifier__ENUM_LBRACE_Enumerator_list_RBRACE_ ); }
+#line 139 "Decipher.y"
+    { (yyval.ast)= new CDASTenum_specifier((CDASTTOKEN *)(yysemantic_stack_[(4) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(4) - (2)].ast) ,(CDASTenumerator_list *)(yysemantic_stack_[(4) - (3)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(4) - (4)].ast) ,(decipher::location *)&yylloc ,DLAST_Enum_specifier__ENUM_LBRACE_Enumerator_list_RBRACE_ ); }
     break;
 
   case 55:
 /* Line 670 of lalr1.cc  */
-#line 140 "scdecl.y"
-    { (yyval.ast)= new CDASTenum_specifier((CDASTTOKEN *)(yysemantic_stack_[(5) - (1)].ast) ,(CDASTqualified_id *)(yysemantic_stack_[(5) - (2)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(5) - (3)].ast) ,(CDASTenumerator_list *)(yysemantic_stack_[(5) - (4)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(5) - (5)].ast) ,(scdecl::location *)&yylloc ,DLAST_Enum_specifier__ENUM_Qualified_id_LBRACE_Enumerator_list_RBRACE_ ); }
+#line 140 "Decipher.y"
+    { (yyval.ast)= new CDASTenum_specifier((CDASTTOKEN *)(yysemantic_stack_[(5) - (1)].ast) ,(CDASTqualified_id *)(yysemantic_stack_[(5) - (2)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(5) - (3)].ast) ,(CDASTenumerator_list *)(yysemantic_stack_[(5) - (4)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(5) - (5)].ast) ,(decipher::location *)&yylloc ,DLAST_Enum_specifier__ENUM_Qualified_id_LBRACE_Enumerator_list_RBRACE_ ); }
     break;
 
   case 56:
 /* Line 670 of lalr1.cc  */
-#line 141 "scdecl.y"
-    { (yyval.ast)= new CDASTenum_specifier((CDASTTOKEN *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTqualified_id *)(yysemantic_stack_[(2) - (2)].ast) ,(scdecl::location *)&yylloc ,DLAST_Enum_specifier__ENUM_Qualified_id_ ); }
+#line 141 "Decipher.y"
+    { (yyval.ast)= new CDASTenum_specifier((CDASTTOKEN *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTqualified_id *)(yysemantic_stack_[(2) - (2)].ast) ,(decipher::location *)&yylloc ,DLAST_Enum_specifier__ENUM_Qualified_id_ ); }
     break;
 
   case 57:
 /* Line 670 of lalr1.cc  */
-#line 143 "scdecl.y"
-    { (yyval.ast)= new CDASTenumerator_list((CDASTenumerator *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Enumerator_list__Enumerator_ ); }
+#line 143 "Decipher.y"
+    { (yyval.ast)= new CDASTenumerator_list((CDASTenumerator *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Enumerator_list__Enumerator_ ); }
     break;
 
   case 58:
 /* Line 670 of lalr1.cc  */
-#line 144 "scdecl.y"
-    { (yyval.ast)= new CDASTenumerator_list((CDASTenumerator_list *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTenumerator *)(yysemantic_stack_[(3) - (3)].ast) ,(scdecl::location *)&yylloc ,DLAST_Enumerator_list__Enumerator_list_COMMA_Enumerator_ ); }
+#line 144 "Decipher.y"
+    { (yyval.ast)= new CDASTenumerator_list((CDASTenumerator_list *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTenumerator *)(yysemantic_stack_[(3) - (3)].ast) ,(decipher::location *)&yylloc ,DLAST_Enumerator_list__Enumerator_list_COMMA_Enumerator_ ); }
     break;
 
   case 59:
 /* Line 670 of lalr1.cc  */
-#line 146 "scdecl.y"
-    { (yyval.ast)= new CDASTenumerator((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Enumerator__IDENTIFIER_ ); }
+#line 146 "Decipher.y"
+    { (yyval.ast)= new CDASTenumerator((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Enumerator__IDENTIFIER_ ); }
     break;
 
   case 60:
 /* Line 670 of lalr1.cc  */
-#line 147 "scdecl.y"
-    { (yyval.ast)= new CDASTenumerator((CDASTTOKEN *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTconstant_expression *)(yysemantic_stack_[(3) - (3)].ast) ,(scdecl::location *)&yylloc ,DLAST_Enumerator__IDENTIFIER_EQUALSIGN_Constant_expression_ ); }
+#line 147 "Decipher.y"
+    { (yyval.ast)= new CDASTenumerator((CDASTTOKEN *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTconstant_expression *)(yysemantic_stack_[(3) - (3)].ast) ,(decipher::location *)&yylloc ,DLAST_Enumerator__IDENTIFIER_EQUALSIGN_Constant_expression_ ); }
     break;
 
   case 61:
 /* Line 670 of lalr1.cc  */
-#line 149 "scdecl.y"
-    { (yyval.ast)= new CDASTtype_qualifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Type_qualifier__CONST_ ); }
+#line 149 "Decipher.y"
+    { (yyval.ast)= new CDASTtype_qualifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Type_qualifier__CONST_ ); }
     break;
 
   case 62:
 /* Line 670 of lalr1.cc  */
-#line 150 "scdecl.y"
-    { (yyval.ast)= new CDASTtype_qualifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Type_qualifier__VOLATILE_ ); }
+#line 150 "Decipher.y"
+    { (yyval.ast)= new CDASTtype_qualifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Type_qualifier__VOLATILE_ ); }
     break;
 
   case 63:
 /* Line 670 of lalr1.cc  */
-#line 151 "scdecl.y"
-    { (yyval.ast)= new CDASTtype_qualifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Type_qualifier__IN_ ); }
+#line 151 "Decipher.y"
+    { (yyval.ast)= new CDASTtype_qualifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Type_qualifier__IN_ ); }
     break;
 
   case 64:
 /* Line 670 of lalr1.cc  */
-#line 152 "scdecl.y"
-    { (yyval.ast)= new CDASTtype_qualifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Type_qualifier__OUT_ ); }
+#line 152 "Decipher.y"
+    { (yyval.ast)= new CDASTtype_qualifier((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Type_qualifier__OUT_ ); }
     break;
 
   case 65:
 /* Line 670 of lalr1.cc  */
-#line 154 "scdecl.y"
-    { (yyval.ast)= new CDASTdeclarator((CDASTpointer *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTdirect_declarator *)(yysemantic_stack_[(2) - (2)].ast) ,(scdecl::location *)&yylloc ,DLAST_Declarator__Pointer_Direct_declarator_ ); }
+#line 154 "Decipher.y"
+    { (yyval.ast)= new CDASTdeclarator((CDASTpointer *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTdirect_declarator *)(yysemantic_stack_[(2) - (2)].ast) ,(decipher::location *)&yylloc ,DLAST_Declarator__Pointer_Direct_declarator_ ); }
     break;
 
   case 66:
 /* Line 670 of lalr1.cc  */
-#line 155 "scdecl.y"
-    { (yyval.ast)= new CDASTdeclarator((CDASTdirect_declarator *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Declarator__Direct_declarator_ ); }
+#line 155 "Decipher.y"
+    { (yyval.ast)= new CDASTdeclarator((CDASTdirect_declarator *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Declarator__Direct_declarator_ ); }
     break;
 
   case 67:
 /* Line 670 of lalr1.cc  */
-#line 157 "scdecl.y"
-    { (yyval.ast)= new CDASTdirect_declarator((CDASTqualified_id *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Direct_declarator__Qualified_id_ ); }
+#line 157 "Decipher.y"
+    { (yyval.ast)= new CDASTdirect_declarator((CDASTqualified_id *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Direct_declarator__Qualified_id_ ); }
     break;
 
   case 68:
 /* Line 670 of lalr1.cc  */
-#line 158 "scdecl.y"
-    { (yyval.ast)= new CDASTdirect_declarator((CDASTTOKEN *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTdeclarator *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (3)].ast) ,(scdecl::location *)&yylloc ,DLAST_Direct_declarator__LPARENTHESIS_Declarator_RPARENTHESIS_ ); }
+#line 158 "Decipher.y"
+    { (yyval.ast)= new CDASTdirect_declarator((CDASTTOKEN *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTdeclarator *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (3)].ast) ,(decipher::location *)&yylloc ,DLAST_Direct_declarator__LPARENTHESIS_Declarator_RPARENTHESIS_ ); }
     break;
 
   case 69:
 /* Line 670 of lalr1.cc  */
-#line 159 "scdecl.y"
-    { (yyval.ast)= new CDASTdirect_declarator((CDASTdirect_declarator *)(yysemantic_stack_[(4) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(4) - (2)].ast) ,(CDASTconstant_expression *)(yysemantic_stack_[(4) - (3)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(4) - (4)].ast) ,(scdecl::location *)&yylloc ,DLAST_Direct_declarator__Direct_declarator_LBRACKET_Constant_expression_RBRACKET_ ); }
+#line 159 "Decipher.y"
+    { (yyval.ast)= new CDASTdirect_declarator((CDASTdirect_declarator *)(yysemantic_stack_[(4) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(4) - (2)].ast) ,(CDASTconstant_expression *)(yysemantic_stack_[(4) - (3)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(4) - (4)].ast) ,(decipher::location *)&yylloc ,DLAST_Direct_declarator__Direct_declarator_LBRACKET_Constant_expression_RBRACKET_ ); }
     break;
 
   case 70:
 /* Line 670 of lalr1.cc  */
-#line 160 "scdecl.y"
-    { (yyval.ast)= new CDASTdirect_declarator((CDASTdirect_declarator *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (3)].ast) ,(scdecl::location *)&yylloc ,DLAST_Direct_declarator__Direct_declarator_LBRACKET_RBRACKET_ ); }
+#line 160 "Decipher.y"
+    { (yyval.ast)= new CDASTdirect_declarator((CDASTdirect_declarator *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (3)].ast) ,(decipher::location *)&yylloc ,DLAST_Direct_declarator__Direct_declarator_LBRACKET_RBRACKET_ ); }
     break;
 
   case 71:
 /* Line 670 of lalr1.cc  */
-#line 161 "scdecl.y"
-    { (yyval.ast)= new CDASTdirect_declarator((CDASTdirect_declarator *)(yysemantic_stack_[(4) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(4) - (2)].ast) ,(CDASTparameter_type_list *)(yysemantic_stack_[(4) - (3)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(4) - (4)].ast) ,(scdecl::location *)&yylloc ,DLAST_Direct_declarator__Direct_declarator_LPARENTHESIS_Parameter_type_list_RPARENTHESIS_ ); }
+#line 161 "Decipher.y"
+    { (yyval.ast)= new CDASTdirect_declarator((CDASTdirect_declarator *)(yysemantic_stack_[(4) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(4) - (2)].ast) ,(CDASTparameter_type_list *)(yysemantic_stack_[(4) - (3)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(4) - (4)].ast) ,(decipher::location *)&yylloc ,DLAST_Direct_declarator__Direct_declarator_LPARENTHESIS_Parameter_type_list_RPARENTHESIS_ ); }
     break;
 
   case 72:
 /* Line 670 of lalr1.cc  */
-#line 162 "scdecl.y"
-    { (yyval.ast)= new CDASTdirect_declarator((CDASTdirect_declarator *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (3)].ast) ,(scdecl::location *)&yylloc ,DLAST_Direct_declarator__Direct_declarator_LPARENTHESIS_RPARENTHESIS_ ); }
+#line 162 "Decipher.y"
+    { (yyval.ast)= new CDASTdirect_declarator((CDASTdirect_declarator *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (3)].ast) ,(decipher::location *)&yylloc ,DLAST_Direct_declarator__Direct_declarator_LPARENTHESIS_RPARENTHESIS_ ); }
     break;
 
   case 73:
 /* Line 670 of lalr1.cc  */
-#line 164 "scdecl.y"
-    { (yyval.ast)= new CDASTpointer((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Pointer__ASTERISK_ ); }
+#line 164 "Decipher.y"
+    { (yyval.ast)= new CDASTpointer((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Pointer__ASTERISK_ ); }
     break;
 
   case 74:
 /* Line 670 of lalr1.cc  */
-#line 165 "scdecl.y"
-    { (yyval.ast)= new CDASTpointer((CDASTTOKEN *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTtype_qualifier_list *)(yysemantic_stack_[(2) - (2)].ast) ,(scdecl::location *)&yylloc ,DLAST_Pointer__ASTERISK_Type_qualifier_list_ ); }
+#line 165 "Decipher.y"
+    { (yyval.ast)= new CDASTpointer((CDASTTOKEN *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTtype_qualifier_list *)(yysemantic_stack_[(2) - (2)].ast) ,(decipher::location *)&yylloc ,DLAST_Pointer__ASTERISK_Type_qualifier_list_ ); }
     break;
 
   case 75:
 /* Line 670 of lalr1.cc  */
-#line 166 "scdecl.y"
-    { (yyval.ast)= new CDASTpointer((CDASTTOKEN *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTpointer *)(yysemantic_stack_[(2) - (2)].ast) ,(scdecl::location *)&yylloc ,DLAST_Pointer__ASTERISK_Pointer_ ); }
+#line 166 "Decipher.y"
+    { (yyval.ast)= new CDASTpointer((CDASTTOKEN *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTpointer *)(yysemantic_stack_[(2) - (2)].ast) ,(decipher::location *)&yylloc ,DLAST_Pointer__ASTERISK_Pointer_ ); }
     break;
 
   case 76:
 /* Line 670 of lalr1.cc  */
-#line 167 "scdecl.y"
-    { (yyval.ast)= new CDASTpointer((CDASTTOKEN *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTtype_qualifier_list *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTpointer *)(yysemantic_stack_[(3) - (3)].ast) ,(scdecl::location *)&yylloc ,DLAST_Pointer__ASTERISK_Type_qualifier_list_Pointer_ ); }
+#line 167 "Decipher.y"
+    { (yyval.ast)= new CDASTpointer((CDASTTOKEN *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTtype_qualifier_list *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTpointer *)(yysemantic_stack_[(3) - (3)].ast) ,(decipher::location *)&yylloc ,DLAST_Pointer__ASTERISK_Type_qualifier_list_Pointer_ ); }
     break;
 
   case 77:
 /* Line 670 of lalr1.cc  */
-#line 169 "scdecl.y"
-    { (yyval.ast)= new CDASTtype_qualifier_list((CDASTtype_qualifier *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Type_qualifier_list__Type_qualifier_ ); }
+#line 169 "Decipher.y"
+    { (yyval.ast)= new CDASTtype_qualifier_list((CDASTtype_qualifier *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Type_qualifier_list__Type_qualifier_ ); }
     break;
 
   case 78:
 /* Line 670 of lalr1.cc  */
-#line 170 "scdecl.y"
-    { (yyval.ast)= new CDASTtype_qualifier_list((CDASTtype_qualifier_list *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTtype_qualifier *)(yysemantic_stack_[(2) - (2)].ast) ,(scdecl::location *)&yylloc ,DLAST_Type_qualifier_list__Type_qualifier_list_Type_qualifier_ ); }
+#line 170 "Decipher.y"
+    { (yyval.ast)= new CDASTtype_qualifier_list((CDASTtype_qualifier_list *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTtype_qualifier *)(yysemantic_stack_[(2) - (2)].ast) ,(decipher::location *)&yylloc ,DLAST_Type_qualifier_list__Type_qualifier_list_Type_qualifier_ ); }
     break;
 
   case 79:
 /* Line 670 of lalr1.cc  */
-#line 172 "scdecl.y"
-    { (yyval.ast)= new CDASTparameter_type_list((CDASTparameter_list *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Parameter_type_list__Parameter_list_ ); }
+#line 172 "Decipher.y"
+    { (yyval.ast)= new CDASTparameter_type_list((CDASTparameter_list *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Parameter_type_list__Parameter_list_ ); }
     break;
 
   case 80:
 /* Line 670 of lalr1.cc  */
-#line 173 "scdecl.y"
-    { (yyval.ast)= new CDASTparameter_type_list((CDASTparameter_list *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (3)].ast) ,(scdecl::location *)&yylloc ,DLAST_Parameter_type_list__Parameter_list_COMMA_ELLIPSIS_ ); }
+#line 173 "Decipher.y"
+    { (yyval.ast)= new CDASTparameter_type_list((CDASTparameter_list *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (3)].ast) ,(decipher::location *)&yylloc ,DLAST_Parameter_type_list__Parameter_list_COMMA_ELLIPSIS_ ); }
     break;
 
   case 81:
 /* Line 670 of lalr1.cc  */
-#line 175 "scdecl.y"
-    { (yyval.ast)= new CDASTparameter_list((CDASTparameter_declaration *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Parameter_list__Parameter_declaration_ ); }
+#line 175 "Decipher.y"
+    { (yyval.ast)= new CDASTparameter_list((CDASTparameter_declaration *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Parameter_list__Parameter_declaration_ ); }
     break;
 
   case 82:
 /* Line 670 of lalr1.cc  */
-#line 176 "scdecl.y"
-    { (yyval.ast)= new CDASTparameter_list((CDASTparameter_list *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTparameter_declaration *)(yysemantic_stack_[(3) - (3)].ast) ,(scdecl::location *)&yylloc ,DLAST_Parameter_list__Parameter_list_COMMA_Parameter_declaration_ ); }
+#line 176 "Decipher.y"
+    { (yyval.ast)= new CDASTparameter_list((CDASTparameter_list *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTparameter_declaration *)(yysemantic_stack_[(3) - (3)].ast) ,(decipher::location *)&yylloc ,DLAST_Parameter_list__Parameter_list_COMMA_Parameter_declaration_ ); }
     break;
 
   case 83:
 /* Line 670 of lalr1.cc  */
-#line 178 "scdecl.y"
-    { (yyval.ast)= new CDASTparameter_declaration((CDASTdeclaration_specifiers *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTdeclarator *)(yysemantic_stack_[(2) - (2)].ast) ,(scdecl::location *)&yylloc ,DLAST_Parameter_declaration__Declaration_specifiers_Declarator_ ); }
+#line 178 "Decipher.y"
+    { (yyval.ast)= new CDASTparameter_declaration((CDASTdeclaration_specifiers *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTdeclarator *)(yysemantic_stack_[(2) - (2)].ast) ,(decipher::location *)&yylloc ,DLAST_Parameter_declaration__Declaration_specifiers_Declarator_ ); }
     break;
 
   case 84:
 /* Line 670 of lalr1.cc  */
-#line 179 "scdecl.y"
-    { (yyval.ast)= new CDASTparameter_declaration((CDASTdeclaration_specifiers *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTabstract_declarator *)(yysemantic_stack_[(2) - (2)].ast) ,(scdecl::location *)&yylloc ,DLAST_Parameter_declaration__Declaration_specifiers_Abstract_declarator_ ); }
+#line 179 "Decipher.y"
+    { (yyval.ast)= new CDASTparameter_declaration((CDASTdeclaration_specifiers *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTabstract_declarator *)(yysemantic_stack_[(2) - (2)].ast) ,(decipher::location *)&yylloc ,DLAST_Parameter_declaration__Declaration_specifiers_Abstract_declarator_ ); }
     break;
 
   case 85:
 /* Line 670 of lalr1.cc  */
-#line 180 "scdecl.y"
-    { (yyval.ast)= new CDASTparameter_declaration((CDASTdeclaration_specifiers *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Parameter_declaration__Declaration_specifiers_ ); }
+#line 180 "Decipher.y"
+    { (yyval.ast)= new CDASTparameter_declaration((CDASTdeclaration_specifiers *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Parameter_declaration__Declaration_specifiers_ ); }
     break;
 
   case 86:
 /* Line 670 of lalr1.cc  */
-#line 182 "scdecl.y"
-    { (yyval.ast)= new CDASTtype_name((CDASTspecifier_qualifier_list *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTabstract_declarator *)(yysemantic_stack_[(2) - (2)].ast) ,(scdecl::location *)&yylloc ,DLAST_Type_name__Specifier_qualifier_list_Abstract_declarator_ ); }
+#line 182 "Decipher.y"
+    { (yyval.ast)= new CDASTtype_name((CDASTspecifier_qualifier_list *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTabstract_declarator *)(yysemantic_stack_[(2) - (2)].ast) ,(decipher::location *)&yylloc ,DLAST_Type_name__Specifier_qualifier_list_Abstract_declarator_ ); }
     break;
 
   case 87:
 /* Line 670 of lalr1.cc  */
-#line 184 "scdecl.y"
-    { (yyval.ast)= new CDASTabstract_declarator((CDASTpointer *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Abstract_declarator__Pointer_ ); }
+#line 184 "Decipher.y"
+    { (yyval.ast)= new CDASTabstract_declarator((CDASTpointer *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Abstract_declarator__Pointer_ ); }
     break;
 
   case 88:
 /* Line 670 of lalr1.cc  */
-#line 185 "scdecl.y"
-    { (yyval.ast)= new CDASTabstract_declarator((CDASTdirect_abstract_declarator *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Abstract_declarator__Direct_abstract_declarator_ ); }
+#line 185 "Decipher.y"
+    { (yyval.ast)= new CDASTabstract_declarator((CDASTdirect_abstract_declarator *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Abstract_declarator__Direct_abstract_declarator_ ); }
     break;
 
   case 89:
 /* Line 670 of lalr1.cc  */
-#line 186 "scdecl.y"
-    { (yyval.ast)= new CDASTabstract_declarator((CDASTpointer *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTdirect_abstract_declarator *)(yysemantic_stack_[(2) - (2)].ast) ,(scdecl::location *)&yylloc ,DLAST_Abstract_declarator__Pointer_Direct_abstract_declarator_ ); }
+#line 186 "Decipher.y"
+    { (yyval.ast)= new CDASTabstract_declarator((CDASTpointer *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTdirect_abstract_declarator *)(yysemantic_stack_[(2) - (2)].ast) ,(decipher::location *)&yylloc ,DLAST_Abstract_declarator__Pointer_Direct_abstract_declarator_ ); }
     break;
 
   case 90:
 /* Line 670 of lalr1.cc  */
-#line 188 "scdecl.y"
-    { (yyval.ast)= new CDASTdirect_abstract_declarator((CDASTTOKEN *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTabstract_declarator *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (3)].ast) ,(scdecl::location *)&yylloc ,DLAST_Direct_abstract_declarator__LPARENTHESIS_Abstract_declarator_RPARENTHESIS_ ); }
+#line 188 "Decipher.y"
+    { (yyval.ast)= new CDASTdirect_abstract_declarator((CDASTTOKEN *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTabstract_declarator *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (3)].ast) ,(decipher::location *)&yylloc ,DLAST_Direct_abstract_declarator__LPARENTHESIS_Abstract_declarator_RPARENTHESIS_ ); }
     break;
 
   case 91:
 /* Line 670 of lalr1.cc  */
-#line 189 "scdecl.y"
-    { (yyval.ast)= new CDASTdirect_abstract_declarator((CDASTTOKEN *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(2) - (2)].ast) ,(scdecl::location *)&yylloc ,DLAST_Direct_abstract_declarator__LBRACKET_RBRACKET_ ); }
+#line 189 "Decipher.y"
+    { (yyval.ast)= new CDASTdirect_abstract_declarator((CDASTTOKEN *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(2) - (2)].ast) ,(decipher::location *)&yylloc ,DLAST_Direct_abstract_declarator__LBRACKET_RBRACKET_ ); }
     break;
 
   case 92:
 /* Line 670 of lalr1.cc  */
-#line 190 "scdecl.y"
-    { (yyval.ast)= new CDASTdirect_abstract_declarator((CDASTTOKEN *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTconstant_expression *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (3)].ast) ,(scdecl::location *)&yylloc ,DLAST_Direct_abstract_declarator__LBRACKET_Constant_expression_RBRACKET_ ); }
+#line 190 "Decipher.y"
+    { (yyval.ast)= new CDASTdirect_abstract_declarator((CDASTTOKEN *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTconstant_expression *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (3)].ast) ,(decipher::location *)&yylloc ,DLAST_Direct_abstract_declarator__LBRACKET_Constant_expression_RBRACKET_ ); }
     break;
 
   case 93:
 /* Line 670 of lalr1.cc  */
-#line 191 "scdecl.y"
-    { (yyval.ast)= new CDASTdirect_abstract_declarator((CDASTdirect_abstract_declarator *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (3)].ast) ,(scdecl::location *)&yylloc ,DLAST_Direct_abstract_declarator__Direct_abstract_declarator_LBRACKET_RBRACKET_ ); }
+#line 191 "Decipher.y"
+    { (yyval.ast)= new CDASTdirect_abstract_declarator((CDASTdirect_abstract_declarator *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (3)].ast) ,(decipher::location *)&yylloc ,DLAST_Direct_abstract_declarator__Direct_abstract_declarator_LBRACKET_RBRACKET_ ); }
     break;
 
   case 94:
 /* Line 670 of lalr1.cc  */
-#line 192 "scdecl.y"
-    { (yyval.ast)= new CDASTdirect_abstract_declarator((CDASTdirect_abstract_declarator *)(yysemantic_stack_[(4) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(4) - (2)].ast) ,(CDASTconstant_expression *)(yysemantic_stack_[(4) - (3)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(4) - (4)].ast) ,(scdecl::location *)&yylloc ,DLAST_Direct_abstract_declarator__Direct_abstract_declarator_LBRACKET_Constant_expression_RBRACKET_ ); }
+#line 192 "Decipher.y"
+    { (yyval.ast)= new CDASTdirect_abstract_declarator((CDASTdirect_abstract_declarator *)(yysemantic_stack_[(4) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(4) - (2)].ast) ,(CDASTconstant_expression *)(yysemantic_stack_[(4) - (3)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(4) - (4)].ast) ,(decipher::location *)&yylloc ,DLAST_Direct_abstract_declarator__Direct_abstract_declarator_LBRACKET_Constant_expression_RBRACKET_ ); }
     break;
 
   case 95:
 /* Line 670 of lalr1.cc  */
-#line 193 "scdecl.y"
-    { (yyval.ast)= new CDASTdirect_abstract_declarator((CDASTTOKEN *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(2) - (2)].ast) ,(scdecl::location *)&yylloc ,DLAST_Direct_abstract_declarator__LPARENTHESIS_RPARENTHESIS_ ); }
+#line 193 "Decipher.y"
+    { (yyval.ast)= new CDASTdirect_abstract_declarator((CDASTTOKEN *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(2) - (2)].ast) ,(decipher::location *)&yylloc ,DLAST_Direct_abstract_declarator__LPARENTHESIS_RPARENTHESIS_ ); }
     break;
 
   case 96:
 /* Line 670 of lalr1.cc  */
-#line 194 "scdecl.y"
-    { (yyval.ast)= new CDASTdirect_abstract_declarator((CDASTTOKEN *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTparameter_type_list *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (3)].ast) ,(scdecl::location *)&yylloc ,DLAST_Direct_abstract_declarator__LPARENTHESIS_Parameter_type_list_RPARENTHESIS_ ); }
+#line 194 "Decipher.y"
+    { (yyval.ast)= new CDASTdirect_abstract_declarator((CDASTTOKEN *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTparameter_type_list *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (3)].ast) ,(decipher::location *)&yylloc ,DLAST_Direct_abstract_declarator__LPARENTHESIS_Parameter_type_list_RPARENTHESIS_ ); }
     break;
 
   case 97:
 /* Line 670 of lalr1.cc  */
-#line 195 "scdecl.y"
-    { (yyval.ast)= new CDASTdirect_abstract_declarator((CDASTdirect_abstract_declarator *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (3)].ast) ,(scdecl::location *)&yylloc ,DLAST_Direct_abstract_declarator__Direct_abstract_declarator_LPARENTHESIS_RPARENTHESIS_ ); }
+#line 195 "Decipher.y"
+    { (yyval.ast)= new CDASTdirect_abstract_declarator((CDASTdirect_abstract_declarator *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (3)].ast) ,(decipher::location *)&yylloc ,DLAST_Direct_abstract_declarator__Direct_abstract_declarator_LPARENTHESIS_RPARENTHESIS_ ); }
     break;
 
   case 98:
 /* Line 670 of lalr1.cc  */
-#line 196 "scdecl.y"
-    { (yyval.ast)= new CDASTdirect_abstract_declarator((CDASTdirect_abstract_declarator *)(yysemantic_stack_[(4) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(4) - (2)].ast) ,(CDASTparameter_type_list *)(yysemantic_stack_[(4) - (3)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(4) - (4)].ast) ,(scdecl::location *)&yylloc ,DLAST_Direct_abstract_declarator__Direct_abstract_declarator_LPARENTHESIS_Parameter_type_list_RPARENTHESIS_ ); }
+#line 196 "Decipher.y"
+    { (yyval.ast)= new CDASTdirect_abstract_declarator((CDASTdirect_abstract_declarator *)(yysemantic_stack_[(4) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(4) - (2)].ast) ,(CDASTparameter_type_list *)(yysemantic_stack_[(4) - (3)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(4) - (4)].ast) ,(decipher::location *)&yylloc ,DLAST_Direct_abstract_declarator__Direct_abstract_declarator_LPARENTHESIS_Parameter_type_list_RPARENTHESIS_ ); }
     break;
 
   case 99:
 /* Line 670 of lalr1.cc  */
-#line 198 "scdecl.y"
-    { (yyval.ast)= new CDASTinitializer((CDASTassignment_expression *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Initializer__Assignment_expression_ ); }
+#line 198 "Decipher.y"
+    { (yyval.ast)= new CDASTinitializer((CDASTassignment_expression *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Initializer__Assignment_expression_ ); }
     break;
 
   case 100:
 /* Line 670 of lalr1.cc  */
-#line 199 "scdecl.y"
-    { (yyval.ast)= new CDASTinitializer((CDASTTOKEN *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTinitializer_list *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (3)].ast) ,(scdecl::location *)&yylloc ,DLAST_Initializer__LBRACE_Initializer_list_RBRACE_ ); }
+#line 199 "Decipher.y"
+    { (yyval.ast)= new CDASTinitializer((CDASTTOKEN *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTinitializer_list *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (3)].ast) ,(decipher::location *)&yylloc ,DLAST_Initializer__LBRACE_Initializer_list_RBRACE_ ); }
     break;
 
   case 101:
 /* Line 670 of lalr1.cc  */
-#line 200 "scdecl.y"
-    { (yyval.ast)= new CDASTinitializer((CDASTTOKEN *)(yysemantic_stack_[(4) - (1)].ast) ,(CDASTinitializer_list *)(yysemantic_stack_[(4) - (2)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(4) - (3)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(4) - (4)].ast) ,(scdecl::location *)&yylloc ,DLAST_Initializer__LBRACE_Initializer_list_COMMA_RBRACE_ ); }
+#line 200 "Decipher.y"
+    { (yyval.ast)= new CDASTinitializer((CDASTTOKEN *)(yysemantic_stack_[(4) - (1)].ast) ,(CDASTinitializer_list *)(yysemantic_stack_[(4) - (2)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(4) - (3)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(4) - (4)].ast) ,(decipher::location *)&yylloc ,DLAST_Initializer__LBRACE_Initializer_list_COMMA_RBRACE_ ); }
     break;
 
   case 102:
 /* Line 670 of lalr1.cc  */
-#line 202 "scdecl.y"
-    { (yyval.ast)= new CDASTinitializer_list((CDASTinitializer *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Initializer_list__Initializer_ ); }
+#line 202 "Decipher.y"
+    { (yyval.ast)= new CDASTinitializer_list((CDASTinitializer *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Initializer_list__Initializer_ ); }
     break;
 
   case 103:
 /* Line 670 of lalr1.cc  */
-#line 203 "scdecl.y"
-    { (yyval.ast)= new CDASTinitializer_list((CDASTinitializer_list *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTinitializer *)(yysemantic_stack_[(3) - (3)].ast) ,(scdecl::location *)&yylloc ,DLAST_Initializer_list__Initializer_list_COMMA_Initializer_ ); }
+#line 203 "Decipher.y"
+    { (yyval.ast)= new CDASTinitializer_list((CDASTinitializer_list *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTinitializer *)(yysemantic_stack_[(3) - (3)].ast) ,(decipher::location *)&yylloc ,DLAST_Initializer_list__Initializer_list_COMMA_Initializer_ ); }
     break;
 
   case 104:
 /* Line 670 of lalr1.cc  */
-#line 205 "scdecl.y"
+#line 205 "Decipher.y"
     { if ( g_IsTypedef && !g_IsInStructUnionDeclaration ){
 								g_TypesSymbolTable.push_back((string)((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast))->m_tokenstring);
 								g_IsTypedef = false;
 								g_IsDirectDeclarator = false;
 							}
-							(yyval.ast)= new CDASTqualified_id((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Qualified_id__IDENTIFIER_ ); }
+							(yyval.ast)= new CDASTqualified_id((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Qualified_id__IDENTIFIER_ ); }
     break;
 
   case 105:
 /* Line 670 of lalr1.cc  */
-#line 211 "scdecl.y"
+#line 211 "Decipher.y"
     {	if ( g_IsTypedef && !g_IsInStructUnionDeclaration ){
 								g_TypesSymbolTable.push_back((string)((CDASTTOKEN *)(yysemantic_stack_[(2) - (1)].ast))->m_tokenstring);
 								g_IsTypedef = false;
 								g_IsDirectDeclarator = false;
 							}
-							(yyval.ast)= new CDASTqualified_id((CDASTTOKEN *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(2) - (2)].ast) ,(scdecl::location *)&yylloc ,DLAST_Qualified_id__SCOPE_OP_IDENTIFIER_ ); }
+							(yyval.ast)= new CDASTqualified_id((CDASTTOKEN *)(yysemantic_stack_[(2) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(2) - (2)].ast) ,(decipher::location *)&yylloc ,DLAST_Qualified_id__SCOPE_OP_IDENTIFIER_ ); }
     break;
 
   case 106:
 /* Line 670 of lalr1.cc  */
-#line 217 "scdecl.y"
-    { (yyval.ast)= new CDASTqualified_id((CDASTqualified_id *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (3)].ast) ,(scdecl::location *)&yylloc ,DLAST_Qualified_id__Qualified_id_SCOPE_OP_IDENTIFIER_ ); }
+#line 217 "Decipher.y"
+    { (yyval.ast)= new CDASTqualified_id((CDASTqualified_id *)(yysemantic_stack_[(3) - (1)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (2)].ast) ,(CDASTTOKEN *)(yysemantic_stack_[(3) - (3)].ast) ,(decipher::location *)&yylloc ,DLAST_Qualified_id__Qualified_id_SCOPE_OP_IDENTIFIER_ ); }
     break;
 
   case 107:
 /* Line 670 of lalr1.cc  */
-#line 219 "scdecl.y"
-    { (yyval.ast)= new CDASTassignment_expression((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Assignment_expression__CONSTANT_EXPRESSION_ ); }
+#line 219 "Decipher.y"
+    { (yyval.ast)= new CDASTassignment_expression((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Assignment_expression__CONSTANT_EXPRESSION_ ); }
     break;
 
   case 108:
 /* Line 670 of lalr1.cc  */
-#line 221 "scdecl.y"
-    { (yyval.ast)= new CDASTconstant_expression((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(scdecl::location *)&yylloc ,DLAST_Constant_expression__CONSTANT_EXPRESSION_ ); }
+#line 221 "Decipher.y"
+    { (yyval.ast)= new CDASTconstant_expression((CDASTTOKEN *)(yysemantic_stack_[(1) - (1)].ast) ,(decipher::location *)&yylloc ,DLAST_Constant_expression__CONSTANT_EXPRESSION_ ); }
     break;
 
 
 /* Line 670 of lalr1.cc  */
-#line 1124 "scdecl.tab.cpp"
+#line 1124 "Decipher.tab.cpp"
       default:
         break;
       }
@@ -1324,7 +1324,7 @@ namespace scdecl {
 
   // Generate an error message.
   std::string
-  SCDeclParserClass::yysyntax_error_ (int yystate, int yytoken)
+  DecipherParserClass::yysyntax_error_ (int yystate, int yytoken)
   {
     std::string yyres;
     // Number of reported tokens (one for the "unexpected", one per
@@ -1420,9 +1420,9 @@ namespace scdecl {
 
   /* YYPACT[STATE-NUM] -- Index in YYTABLE of the portion describing
      STATE-NUM.  */
-  const signed char SCDeclParserClass::yypact_ninf_ = -101;
+  const signed char DecipherParserClass::yypact_ninf_ = -101;
   const short int
-  SCDeclParserClass::yypact_[] =
+  DecipherParserClass::yypact_[] =
   {
        281,  -101,  -101,  -101,  -101,  -101,  -101,  -101,  -101,  -101,
     -101,  -101,     8,  -101,  -101,  -101,  -101,  -101,  -101,   359,
@@ -1446,7 +1446,7 @@ namespace scdecl {
      YYTABLE doesn't specify something else to do.  Zero means the
      default is an error.  */
   const unsigned char
-  SCDeclParserClass::yydefact_[] =
+  DecipherParserClass::yydefact_[] =
   {
          2,    28,    29,    24,    30,    31,    33,    32,    36,    40,
       41,    20,     0,    21,    22,    23,    25,    26,    27,     0,
@@ -1468,7 +1468,7 @@ namespace scdecl {
 
   /* YYPGOTO[NTERM-NUM].  */
   const short int
-  SCDeclParserClass::yypgoto_[] =
+  DecipherParserClass::yypgoto_[] =
   {
       -101,  -101,   -12,  -101,    18,  -101,   174,  -101,   -18,  -101,
     -101,   189,   -73,    36,  -101,   130,  -101,   217,   193,   -19,
@@ -1478,7 +1478,7 @@ namespace scdecl {
 
   /* YYDEFGOTO[NTERM-NUM].  */
   const short int
-  SCDeclParserClass::yydefgoto_[] =
+  DecipherParserClass::yydefgoto_[] =
   {
         -1,    24,    25,    26,    92,    47,    48,    28,    29,    30,
       31,    82,    83,    84,   118,   119,    32,    59,    60,    33,
@@ -1489,9 +1489,9 @@ namespace scdecl {
   /* YYTABLE[YYPACT[STATE-NUM]].  What to do in state STATE-NUM.  If
      positive, shift that token.  If negative, reduce the rule which
      number is the opposite.  If YYTABLE_NINF_, syntax error.  */
-  const signed char SCDeclParserClass::yytable_ninf_ = -1;
+  const signed char DecipherParserClass::yytable_ninf_ = -1;
   const unsigned char
-  SCDeclParserClass::yytable_[] =
+  DecipherParserClass::yytable_[] =
   {
         40,    38,    72,    81,    67,   100,   114,    68,   137,   116,
       62,    74,   122,   112,    43,    37,    34,    58,    27,    40,
@@ -1538,7 +1538,7 @@ namespace scdecl {
 
   /* YYCHECK.  */
   const short int
-  SCDeclParserClass::yycheck_[] =
+  DecipherParserClass::yycheck_[] =
   {
         19,    19,    45,    51,    39,    67,    80,    39,   108,    82,
        8,    46,    86,    79,    26,    12,     8,    25,     0,    38,
@@ -1586,7 +1586,7 @@ namespace scdecl {
   /* STOS_[STATE-NUM] -- The (internal number of the) accessing
      symbol of state STATE-NUM.  */
   const unsigned char
-  SCDeclParserClass::yystos_[] =
+  DecipherParserClass::yystos_[] =
   {
          0,    16,    17,    18,    19,    20,    21,    22,    23,    24,
       26,    27,    28,    29,    30,    31,    32,    34,    35,    36,
@@ -1610,7 +1610,7 @@ namespace scdecl {
   /* TOKEN_NUMBER_[YYLEX-NUM] -- Internal symbol number corresponding
      to YYLEX-NUM.  */
   const unsigned short int
-  SCDeclParserClass::yytoken_number_[] =
+  DecipherParserClass::yytoken_number_[] =
   {
          0,   256,   257,   258,   259,   260,   261,   262,   263,   264,
      265,   266,   267,   268,   269,   270,   271,   272,   273,   274,
@@ -1622,7 +1622,7 @@ namespace scdecl {
 
   /* YYR1[YYN] -- Symbol number of symbol that rule YYN derives.  */
   const unsigned char
-  SCDeclParserClass::yyr1_[] =
+  DecipherParserClass::yyr1_[] =
   {
          0,    42,    43,    43,    44,    44,    44,    44,    45,    45,
       46,    46,    46,    46,    46,    46,    47,    47,    48,    48,
@@ -1639,7 +1639,7 @@ namespace scdecl {
 
   /* YYR2[YYN] -- Number of symbols composing right hand side of rule YYN.  */
   const unsigned char
-  SCDeclParserClass::yyr2_[] =
+  DecipherParserClass::yyr2_[] =
   {
          0,     2,     0,     1,     1,     2,     2,     3,     2,     3,
        1,     2,     1,     2,     1,     2,     1,     3,     1,     3,
@@ -1658,7 +1658,7 @@ namespace scdecl {
   /* YYTNAME[SYMBOL-NUM] -- String name of the symbol SYMBOL-NUM.
      First, the terminals, then, starting at \a yyntokens_, nonterminals.  */
   const char*
-  const SCDeclParserClass::yytname_[] =
+  const DecipherParserClass::yytname_[] =
   {
     "\"end of file\"", "error", "$undefined", "LEAST",
   "CONSTANT_EXPRESSION", "SEMICOLON", "COMMA", "EQUALSIGN", "LBRACE",
@@ -1683,8 +1683,8 @@ namespace scdecl {
 
 #if YYDEBUG
   /* YYRHS -- A `-1'-separated list of the rules' RHS.  */
-  const SCDeclParserClass::rhs_number_type
-  SCDeclParserClass::yyrhs_[] =
+  const DecipherParserClass::rhs_number_type
+  DecipherParserClass::yyrhs_[] =
   {
         43,     0,    -1,    -1,    44,    -1,    45,    -1,    36,    69,
       -1,    45,    44,    -1,    36,    69,    44,    -1,    46,     5,
@@ -1723,7 +1723,7 @@ namespace scdecl {
   /* YYPRHS[YYN] -- Index of the first RHS symbol of rule number YYN in
      YYRHS.  */
   const unsigned short int
-  SCDeclParserClass::yyprhs_[] =
+  DecipherParserClass::yyprhs_[] =
   {
          0,     0,     3,     4,     6,     8,    11,    14,    18,    21,
       25,    27,    30,    32,    35,    37,    40,    42,    46,    48,
@@ -1740,7 +1740,7 @@ namespace scdecl {
 
   /* YYRLINE[YYN] -- Source line where rule number YYN was defined.  */
   const unsigned char
-  SCDeclParserClass::yyrline_[] =
+  DecipherParserClass::yyrline_[] =
   {
          0,    72,    72,    73,    75,    76,    77,    78,    80,    81,
       83,    84,    85,    86,    87,    88,    90,    91,    93,    94,
@@ -1757,7 +1757,7 @@ namespace scdecl {
 
   // Print the state stack on the debug stream.
   void
-  SCDeclParserClass::yystack_print_ ()
+  DecipherParserClass::yystack_print_ ()
   {
     *yycdebug_ << "Stack now";
     for (state_stack_type::const_iterator i = yystate_stack_.begin ();
@@ -1768,7 +1768,7 @@ namespace scdecl {
 
   // Report on the debug stream that the rule \a yyrule is going to be reduced.
   void
-  SCDeclParserClass::yy_reduce_print_ (int yyrule)
+  DecipherParserClass::yy_reduce_print_ (int yyrule)
   {
     unsigned int yylno = yyrline_[yyrule];
     int yynrhs = yyr2_[yyrule];
@@ -1785,8 +1785,8 @@ namespace scdecl {
 #endif // YYDEBUG
 
   /* YYTRANSLATE(YYLEX) -- Bison symbol number corresponding to YYLEX.  */
-  SCDeclParserClass::token_number_type
-  SCDeclParserClass::yytranslate_ (int t)
+  DecipherParserClass::token_number_type
+  DecipherParserClass::yytranslate_ (int t)
   {
     static
     const token_number_type
@@ -1829,25 +1829,25 @@ namespace scdecl {
       return yyundef_token_;
   }
 
-  const int SCDeclParserClass::yyeof_ = 0;
-  const int SCDeclParserClass::yylast_ = 400;
-  const int SCDeclParserClass::yynnts_ = 35;
-  const int SCDeclParserClass::yyempty_ = -2;
-  const int SCDeclParserClass::yyfinal_ = 42;
-  const int SCDeclParserClass::yyterror_ = 1;
-  const int SCDeclParserClass::yyerrcode_ = 256;
-  const int SCDeclParserClass::yyntokens_ = 42;
+  const int DecipherParserClass::yyeof_ = 0;
+  const int DecipherParserClass::yylast_ = 400;
+  const int DecipherParserClass::yynnts_ = 35;
+  const int DecipherParserClass::yyempty_ = -2;
+  const int DecipherParserClass::yyfinal_ = 42;
+  const int DecipherParserClass::yyterror_ = 1;
+  const int DecipherParserClass::yyerrcode_ = 256;
+  const int DecipherParserClass::yyntokens_ = 42;
 
-  const unsigned int SCDeclParserClass::yyuser_token_number_max_ = 296;
-  const SCDeclParserClass::token_number_type SCDeclParserClass::yyundef_token_ = 2;
+  const unsigned int DecipherParserClass::yyuser_token_number_max_ = 296;
+  const DecipherParserClass::token_number_type DecipherParserClass::yyundef_token_ = 2;
 
 /* Line 1141 of lalr1.cc  */
-#line 12 "scdecl.y"
-} // scdecl
+#line 12 "Decipher.y"
+} // decipher
 /* Line 1141 of lalr1.cc  */
-#line 1849 "scdecl.tab.cpp"
+#line 1849 "Decipher.tab.cpp"
 /* Line 1142 of lalr1.cc  */
-#line 223 "scdecl.y"
+#line 223 "Decipher.y"
 
 bool g_IsDirectDeclarator =false;
 bool g_IsInStructUnionDeclaration=false;

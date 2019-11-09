@@ -7,31 +7,31 @@
 /* *********************************************************************************** */
 #ifndef SCDECL_DRIVER_HH
 #define SCDECL_DRIVER_HH
-#include "scdecl.tab.h"
+#include "decipher.tab.h"
 #include <string>
 #include <iostream>
 #include <stdlib.h>
 #include <list>
 #include "CD_ASTSyntaxElements.h"
 #include "CD_HLIRSyntaxElements.h"
-extern void scdeclrestart(FILE *);
+extern void yyrestart(FILE *);
 using namespace std;
-extern scdecl::location *DLloc_;
-class scdecl_driver;
+extern decipher::location* DLloc_;
+class DecipherParser_driver;
 // Tell Flex the lexer’s prototype ...
-#define YY_DLDECL \
-scdecl::SCDeclParserClass::token_type \
-scdecllex (scdecl::SCDeclParserClass::semantic_type* yylval, \
-	scdecl::SCDeclParserClass::location_type* yylloc, \
-	SCDeclParser_driver& driver)
+#define YY_DECL \
+decipher::DecipherParserClass::token_type \
+yylex (decipher::DecipherParserClass::semantic_type* yylval, \
+	decipher::DecipherParserClass::location_type* yylloc, \
+	DecipherParser_driver& driver)
 // ... and declare it for the parser’s sake.
-YY_DLDECL;
+YY_DECL;
 // Conducting the whole scanning and parsing of Calc++.
 class CDHLIRSyntaxElement;
-class SCDeclParser_driver{
+class DecipherParser_driver{
 public:
-	SCDeclParser_driver (int numfiles, char** files);
-	virtual ~SCDeclParser_driver();
+	DecipherParser_driver (int numfiles, char** files);
+	virtual ~DecipherParser_driver();
 
 	bool trace_scanning;
 	bool trace_parsing;
@@ -50,7 +50,7 @@ public:
 	void Extract_AST_Graph(string filename);
 
 	// Error handling.
-	void error (const scdecl::location& l, const std::string& m);
+	void error (const decipher::location& l, const std::string& m);
 	void error (const std::string& m);
 public:
 	CDASTSyntaxElement *m_ASTRoot;

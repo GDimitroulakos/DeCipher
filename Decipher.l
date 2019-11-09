@@ -11,14 +11,14 @@
 #include <iostream>
 #include "CD_ASTSyntaxElements.h"
 #include "CD_driver.h"
-#include "scdecl.tab.h"
+#include "Decipher.tab.h"
 //#define DEBUG_SCANNER1
-inline void DEBUG(scdecl::SCDeclParserClass::location_type*, char *text=NULL);
+inline void DEBUG(decipher::DecipherParserClass::location_type*, char *text=NULL);
 /* By default yylex returns int, we use token_type.
 Unfortunately yyterminate by default returns 0, which is
 not of token_type. */
 #define yyterminate() return token::ENDOFFILE
-typedef scdecl::SCDeclParserClass::token token;
+typedef decipher::DecipherParserClass::token token;
 CDASTTOKEN *newtoken;
 list<string> g_TypesSymbolTable;
 bool IsTypeName(string name);
@@ -200,7 +200,7 @@ regexp_TYPE_NAME		{ DEBUG(yylloc); newtoken = new CDASTTOKEN(DLT_TYPE_NAME, yyll
 					}
 "//%%"				{ return token::ENDOFFILE;}
 %%
-inline void DEBUG(scdecl::SCDeclParserClass::location_type* yylloc, char *text){
+inline void DEBUG(decipher::DecipherParserClass::location_type* yylloc, char *text){
 #ifdef DEBUG_SCANNER1
 	if (text == NULL ){
 		cout << endl << "yytext:"<<scdecltext
