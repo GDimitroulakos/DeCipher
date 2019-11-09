@@ -102,15 +102,9 @@
     <ClCompile Include="CD_HLIRSyntaxElements.cpp" />
     <ClCompile Include="CD_HLIRTemplates.cpp" />
     <ClCompile Include="CD_HLIRTypeDefines.cpp" />
-    <ClCompile Include="lex.scdecl.c">
-      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
-      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
-    </ClCompile>
-    <ClCompile Include="SCDecl.cpp" />
-    <ClCompile Include="scdecl.tab.c">
-      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
-      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsCpp</CompileAs>
-    </ClCompile>
+    <ClCompile Include="Decipher.flex.cpp" />
+    <ClCompile Include="Decipher.tab.cpp" />
+    <ClCompile Include="Decipher.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CD_ASTDefines.h" />
@@ -122,20 +116,15 @@
     <ClInclude Include="CD_HLIRSyntaxElements.h" />
     <ClInclude Include="CD_HLIRTemplates.h" />
     <ClInclude Include="CD_HLIRTypeDefines.h" />
-    <ClInclude Include="scdecl.tab.h" />
+    <ClInclude Include="Decipher.tab.h" />
+    <ClInclude Include="location.hh" />
+    <ClInclude Include="position.hh" />
+    <ClInclude Include="stack.hh" />
   </ItemGroup>
   <ItemGroup>
-    <Flex Include="scdecl.l">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <FileType>Document</FileType>
-    </Flex>
+    <Flex Include="Decipher.l" />
     <None Include="scdecl.output" />
-    <Bison Include="scdecl.y">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <FileType>Document</FileType>
-    </Bison>
+    <Bison Include="Decipher.y" />
     <None Include="test1.sce" />
   </ItemGroup>
   <ItemGroup>

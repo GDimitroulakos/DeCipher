@@ -57,14 +57,14 @@
     <ClCompile Include="CD_HLIRTypeDefines.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SCDecl.cpp">
+    <ClCompile Include="Decipher.flex.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="lex.scdecl.c">
-      <Filter>Grammar</Filter>
+    <ClCompile Include="Decipher.tab.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="scdecl.tab.c">
-      <Filter>Grammar</Filter>
+    <ClCompile Include="Decipher.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -95,7 +95,16 @@
     <ClInclude Include="CD_HLIRTypeDefines.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="scdecl.tab.h">
+    <ClInclude Include="Decipher.tab.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="location.hh">
+      <Filter>Grammar</Filter>
+    </ClInclude>
+    <ClInclude Include="position.hh">
+      <Filter>Grammar</Filter>
+    </ClInclude>
+    <ClInclude Include="stack.hh">
       <Filter>Grammar</Filter>
     </ClInclude>
   </ItemGroup>
@@ -116,12 +125,12 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <Flex Include="scdecl.l">
+    <Flex Include="Decipher.l">
       <Filter>Grammar</Filter>
     </Flex>
   </ItemGroup>
   <ItemGroup>
-    <Bison Include="scdecl.y">
+    <Bison Include="Decipher.y">
       <Filter>Grammar</Filter>
     </Bison>
   </ItemGroup>

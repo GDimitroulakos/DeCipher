@@ -57,14 +57,14 @@
     <ClCompile Include="CD_HLIRTypeDefines.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SCDecl.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Decipher.flex.cpp">
       <Filter>Grammar</Filter>
     </ClCompile>
     <ClCompile Include="Decipher.tab.cpp">
       <Filter>Grammar</Filter>
+    </ClCompile>
+    <ClCompile Include="Decipher.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
