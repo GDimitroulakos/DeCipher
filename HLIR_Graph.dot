@@ -1,0 +1,51 @@
+digraph G {
+
+subgraph cluster0 {
+node [style=filled,color=white];
+style=filled;
+color=lightgrey;
+label = "_Root_RootSingleContext";
+_TranslationUnit1;
+}
+subgraph cluster1 {
+node [style=filled,color=white];
+style=filled;
+color=lightgrey;
+label = "_TranslationUnit_Declaration";
+_Declaration2;
+}
+_ROOT0 -> _TranslationUnit1;
+subgraph cluster2 {
+node [style=filled,color=white];
+style=filled;
+color=lightgrey;
+label = "_Declaration_TypeSpecifiers";
+_TypeSpecifier_3;
+}
+subgraph cluster3 {
+node [style=filled,color=white];
+style=filled;
+color=lightgrey;
+label = "_Declaration_Declarators";
+_Declarator5;
+}
+_TranslationUnit1 -> _Declaration2;
+subgraph cluster4 {
+node [style=filled,color=white];
+style=filled;
+color=lightgrey;
+label = "_TypeSpecifier_TypeName";
+T_IntegerType4;
+}
+_Declaration2 -> _TypeSpecifier_3;
+_TypeSpecifier_3 -> T_IntegerType4;
+subgraph cluster5 {
+node [style=filled,color=white];
+style=filled;
+color=lightgrey;
+label = "_Declarator_TypeExpression";
+E_IDENTIFIER_aaa_6;
+}
+_Declaration2 -> _Declarator5;
+_Declarator5 -> E_IDENTIFIER_aaa_6;
+}

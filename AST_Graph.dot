@@ -1,0 +1,14 @@
+digraph G{
+   scdeclaration_unit_12->scdeclarations_11;
+   scdeclarations_11->scdeclaration_10;
+   scdeclaration_10->declaration_specifiers_3;
+   declaration_specifiers_3->type_specifier_1;
+   type_specifier_1->TOKEN_INT_0;
+   scdeclaration_10->init_declarator_list_9;
+   init_declarator_list_9->init_declarator_8;
+   init_declarator_8->declarator_7;
+   declarator_7->direct_declarator_6;
+   direct_declarator_6->qualified_id_4;
+   qualified_id_4->TOKEN_IDENTIFIER_2;
+   scdeclaration_10->TOKEN_SEMICOLON_5;
+}

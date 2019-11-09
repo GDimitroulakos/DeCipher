@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Grammar">
+      <UniqueIdentifier>{fdfbaad0-0422-466b-8814-82c6bd3f0d9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Testbench">
+      <UniqueIdentifier>{6c0d5120-8856-4978-8f87-c3ad6d90950c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CD_AST2HLIRGen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CD_ASTDefines.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CD_ASTGraphEmmiter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CD_ASTSyntaxElements.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CD_Defines.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CD_driver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CD_HLIRDefines.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CD_HLIRGraphEmmiter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CD_HLIRObjectDataBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CD_HLIRSyntaxElements.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CD_HLIRTemplates.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CD_HLIRTypeDefines.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SCDecl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="scdecl.flex.cpp">
+      <Filter>Grammar</Filter>
+    </ClCompile>
+    <ClCompile Include="scdecl.tab.cpp">
+      <Filter>Grammar</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CD_ASTDefines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CD_ASTSyntaxElements.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CD_Defines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CD_driver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CD_HLIRDefines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CD_HLIRObjectDataBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CD_HLIRSyntaxElements.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CD_HLIRTemplates.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CD_HLIRTypeDefines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="location.hh">
+      <Filter>Grammar</Filter>
+    </ClInclude>
+    <ClInclude Include="position.hh">
+      <Filter>Grammar</Filter>
+    </ClInclude>
+    <ClInclude Include="stack.hh">
+      <Filter>Grammar</Filter>
+    </ClInclude>
+    <ClInclude Include="scdecl.tab.h">
+      <Filter>Grammar</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="scdecl.output">
+      <Filter>Testbench</Filter>
+    </None>
+    <None Include="test1.sce">
+      <Filter>Testbench</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="ASTgraph.gif">
+      <Filter>Testbench</Filter>
+    </Image>
+    <Image Include="HLIR.gif">
+      <Filter>Testbench</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Flex Include="scdecl.l">
+      <Filter>Grammar</Filter>
+    </Flex>
+  </ItemGroup>
+  <ItemGroup>
+    <Bison Include="scdecl.y">
+      <Filter>Grammar</Filter>
+    </Bison>
+  </ItemGroup>
+</Project>

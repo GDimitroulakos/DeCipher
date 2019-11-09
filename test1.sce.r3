@@ -1,0 +1,3 @@
+union aaa{
+int a;
+};

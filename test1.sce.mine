@@ -1,0 +1,6 @@
+typedef union aaa{
+int a;
+} AAA;
+
+
+AAA bbb;
