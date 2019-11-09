@@ -14,10 +14,10 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
     </Filter>
     <Filter Include="Grammar">
-      <UniqueIdentifier>{fdfbaad0-0422-466b-8814-82c6bd3f0d9a}</UniqueIdentifier>
+      <UniqueIdentifier>{c6b82b62-c40b-4d42-9d63-99ce562cfc09}</UniqueIdentifier>
     </Filter>
     <Filter Include="Testbench">
-      <UniqueIdentifier>{6c0d5120-8856-4978-8f87-c3ad6d90950c}</UniqueIdentifier>
+      <UniqueIdentifier>{699e4af3-6678-4088-866c-576543958e08}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -60,10 +60,10 @@
     <ClCompile Include="SCDecl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="scdecl.flex.cpp">
+    <ClCompile Include="lex.scdecl.c">
       <Filter>Grammar</Filter>
     </ClCompile>
-    <ClCompile Include="scdecl.tab.cpp">
+    <ClCompile Include="scdecl.tab.c">
       <Filter>Grammar</Filter>
     </ClCompile>
   </ItemGroup>
@@ -95,20 +95,17 @@
     <ClInclude Include="CD_HLIRTypeDefines.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="location.hh">
-      <Filter>Grammar</Filter>
-    </ClInclude>
-    <ClInclude Include="position.hh">
-      <Filter>Grammar</Filter>
-    </ClInclude>
-    <ClInclude Include="stack.hh">
-      <Filter>Grammar</Filter>
-    </ClInclude>
     <ClInclude Include="scdecl.tab.h">
       <Filter>Grammar</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <None Include="scdecl.l">
+      <Filter>Grammar</Filter>
+    </None>
+    <None Include="scdecl.y">
+      <Filter>Grammar</Filter>
+    </None>
     <None Include="scdecl.output">
       <Filter>Testbench</Filter>
     </None>
@@ -123,15 +120,5 @@
     <Image Include="HLIR.gif">
       <Filter>Testbench</Filter>
     </Image>
-  </ItemGroup>
-  <ItemGroup>
-    <Flex Include="scdecl.l">
-      <Filter>Grammar</Filter>
-    </Flex>
-  </ItemGroup>
-  <ItemGroup>
-    <Bison Include="scdecl.y">
-      <Filter>Grammar</Filter>
-    </Bison>
   </ItemGroup>
 </Project>
