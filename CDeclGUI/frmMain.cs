@@ -66,7 +66,7 @@ namespace CDeclGUI
             try
             {
                 string inputCcode = txtInputCode.Text;
-                string executable = m_ExeDirPath + "\\deCipher.exe";
+                string executable = m_ExeDirPath + @"\..\..\..\Debug\deCipher.exe";
                 string input_file = m_ExeDirPath + "\\input_declarations.c";
 
                 if (inputCcode == "")
